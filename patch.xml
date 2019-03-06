@@ -3,19 +3,16 @@
 	<ver>
 		<number>1.0</number>
 		<notes>
-			Test raz dwa trzy
-		</notes>
-	</ver>
-	<ver>
-		<number>1.1</number>
-		<notes>
-			Test raz dwa trzy
-		</notes>
-	</ver>
-	<ver>
-		<number>1.2</number>
-		<notes>
-			Test raz dwa trzy
+			<b>OD TERAZ ZACZYNAM NUMERACJE xd</b>
+			<br/>
+			A więc, najnowsze zmiany to między innymi:
+			<ul>
+				<li>Otoczka dookoła okna</li>
+				<li>Zmiana prędkości przeciwników</li>
+				<li>Optymalizacja kodu</li>
+				<li>Cząsteczki krwi</li>
+				<li>Poprawiono pare błędów</li>
+			</ul>
 		</notes>
 	</ver>
 </patches>
