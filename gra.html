@@ -14,12 +14,25 @@
                 color: inherit;
                 text-decoration: none;
             }
+            
+            .game{
+                width: 75vw;
+                height: 75vh;
+            }
+            
+            .patch-note{
+                width: 75vw;
+                height: 75vh;
+                border: 1px dashed white;
+            }
         </style>
     </head>
     <body>
         <center>
-            <iframe src="Gra/index.html"></iframe>
-            <p class="patch-note">1.0</p>
+            <iframe src="Gra/index.html" class="game"></iframe>
+            <br>
+            <h1>Aktualizacje</h1>
+            <iframe src="patch.xml" class="patch-note"></iframe>
         </center>
     </body>
 </html>

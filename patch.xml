@@ -1,0 +1,21 @@
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<patches>
+	<ver>
+		<number>1.0</number>
+		<notes>
+			Test raz dwa trzy
+		</notes>
+	</ver>
+	<ver>
+		<number>1.1</number>
+		<notes>
+			Test raz dwa trzy
+		</notes>
+	</ver>
+	<ver>
+		<number>1.2</number>
+		<notes>
+			Test raz dwa trzy
+		</notes>
+	</ver>
+</patches>
