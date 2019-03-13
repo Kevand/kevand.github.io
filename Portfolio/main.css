@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0px;
+    transition: filter 1s;
+}
+
+body{
+	overflow: hidden;
+}
+
+.parallax_bg{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-1{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.container-2{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 100vw;
+    z-index: 1;
+}
+
+.container-3{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 100vh;
+    left: 0;
+    z-index: 1;
+}
+
+.container-4{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: -100vw;
+    z-index: 1;
+}
+
+.nav{
+    position: absolute;
+    top: 0px;
+    z-index: 4;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+
+.nav_left{
+    width: calc(60% + 3vw);
+    padding-left: 3vw;
+    float: left;
+    line-height: 100px;
+}
+
+.nav_right{
+    width: calc(20% + 3vw);
+    padding-right: 3vw;
+    float: right;
+    line-height: 100px;
+}
+
+.nav_right_button{
+    float: right;
+    width: 16.66%;
+    transition: 0.3s;
+}
+
+a:link, a:visited, a:hover{
+    color: inherit;
+    text-decoration: none; 
+}
+
+.nav_left_button{
+    float: left;
+    width: 10%;
+    transition: 0.3s;
+    overflow: hidden;
+    padding: 0px 1vw;
+    white-space: nowrap;
+}
+
+.nav_right_button:hover, .nav_left_button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logo_image{
+    max-width: 500px;
+    position:absolute;
+    z-index: 4;
+    left: 50vw;
+    top:  50vh;
+    margin-left: -250px;
+    margin-top:  -250px;
+    transition: 0.5s;
+    animation: logo_fade 1s,logo_wiggle 20s 1s infinite;
+}
+
+.logo_image:hover{
+    cursor: pointer;
+}
+
+.logo{
+    height: 100vh;
+}
+
+.background{
+    position: fixed;
+    z-index: 0;
+    top: -50px;
+    left: -50px;
+    width: calc(100vw + 100px);
+    height: calc(100vh + 100px);
+    background-image: url("img/bg.jpg");
+    filter: grayscale(100%) brightness(20%) invert(100%) blur(5px);
+    background-position: center;
+    background-size: cover;
+}
+
+@keyframes logo_fade{
+    from{
+        opacity: 0;
+        transform: scale(0.5) rotate3d(1, 1, 1, 180deg);
+    }to{
+        opacity: 1;
+        transform: scale(1) rotate3d(1, 1, 1, 0deg); 
+    }
+}
+
+@keyframes logo_wiggle{
+    0%{transform: translate(0px, 0px) rotate3d(1, 1, 1, 0deg);}
+    10%{transform: translate(18px, 17px) rotate3d(1, 1, 1, 1deg);}
+    20%{transform: translate(8px, 2px) rotate3d(1, 1, 1, -11deg);}
+    30%{transform: translate(12px, 21px) rotate3d(1, 1, 1, 6deg);}
+    40%{transform: translate(18px, 14px) rotate3d(1, 1, 1, -4deg);}
+    50%{transform: translate(24px, 23px) rotate3d(1, 1, 1, 5deg);}
+    60%{transform: translate(6px, 11px) rotate3d(1, 1, 1, -11deg);}
+    70%{transform: translate(24px, 1px) rotate3d(1, 1, 1, 15deg);}
+    80%{transform: translate(7px, 4px) rotate3d(1, 1, 1, -10deg);}
+    90%{transform: translate(7px, 1px) rotate3d(1, 1, 1, 7deg);}
+    100%{transform: translate(0px, 0px) rotate3d(1, 1, 1, 0deg);}
+}
+
+.c2_content{
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    top: calc(50% - 15vh);
+}
+
+.c2_content > h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.c2_content > p{
+    padding: 20px 10vw;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.c3_content{
+    text-align: center;
+    width: 75vw;
+    height: 30vh;
+    position: absolute;
+    top: calc(50% - 15vh);
+    left: calc(50% - 37.5vw);
+}
+
+.c3_content > h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.c3_content > h2{
+    padding: 20px 10vw;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.song{
+    width: calc(50% - 50px);
+    margin: 25px;
+    padding: 25px 0px;
+    height: 200px;
+    background-color: #111;
+    color: white;
+    float: left;
+    border-spacing: 25px 0px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.song:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.cover_art{
+    float: left;
+    height: 200px;
+}
+
+.song_title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cover_art_parent{
+    text-align: center;
+    width: 200px;
+}
+
+.song_info_parent{
+    text-align: center;
+}
+
+.song_genre{
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+.listen{
+    width: 100%;
+    height: 30px;
+    padding: 15px 0px;
+    text-align: center;
+    border-spacing: 20% 0px;
+}
+
+.yt, .sc, .sp, .bc{
+    border-radius: 30px;
+    background-color: #111;
+    transition: 0.2s;
+    width: 33.33%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.song_info > tr{
+    height: 20%;
+}
+
+.song_info{
+    width: 100%;
+}
+
+.yt:hover{
+    background-color: #FF0000;
+    transition: 0.2s;
+}
+
+.sc:hover{
+    background-color: #ff8800;
+    transition: 0.2s;
+}
+
+.sp:hover{
+    background-color: #1db954;
+    transition: 0.2s;
+}
+
+.bc:hover{
+    background-color: #629aa9;
+    transition: 0.2s;
+}
+
+.music_container{
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.music_container::-webkit-scrollbar{
+    display: none;
+}
