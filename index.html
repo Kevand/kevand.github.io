@@ -1,60 +1,43 @@
 <!DOCTYPE html>
-<html>
-	<head>
-        <meta http-Equiv="Cache-Control" Content="no-store, no-cache, must-revalidate" />
-        <meta http-Equiv="Pragma" Content="no-cache" />
-        <meta http-Equiv="Expires" Content="0" />
-        <title>Kevand website yow</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
-            body{
-                font-family: 'Source Sans Pro', sans-serif;
-                background-color: #111;
-                color: white;
-            }
-            
-            .link{
-                padding: 30px 60px;
-                background-color: #336611;
-                text-shadow: 1px 1px 3px rgba(0,0,0, 0.5);
-                transition: 0.2s;
-                margin: 10px;
-                font-size: 40px;
-                text-transform: uppercase;
-                display: inline-block;
-            }
-            
-            a:link,a:hover,a:visited{
-                color: inherit;
-                text-decoration: none;
-            }
-            
-            .link:hover{
-                transform: scale(1.03);
-                transition: 0.2s;
-            }
-            
-            .link:active{
-                transform: scale(0.96);
-                transition: 0.2s;
-            }
-        </style>
+<html lang="pl">
+    <head>
+        <title>Kevand | Landing page</title>
+
+        <meta charset="utf-8">
+        <meta name="author" content="kevand">
+        <meta name="description" content="Kevand's landing page">
+        <meta name="keyword" content="webdev, programming, music, kevand, games">
+
+        <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
-        <a href="gra.html"><div class="link">
-            Gra
-        </div></a>
-		<a href="Portfolio/index.html"><div class="link">
-            Portfolio
-        </div></a>
-        <a href="http://kevandzior.atthost24.pl" target="_blank"><div class="link">
-            Czat
-        </div></a>
-		<a href="http://nlgtools.kevandzior.atthost24.pl" target="_blank"><div class="link">
-            nlgtools
-        </div></a>
-		<a href="http://trojkat.kevandzior.atthost24.pl" target="_blank"><div class="link">
-            Trójkąt
-        </div></a>
+        <div id="container">
+            <header>
+                Kevand
+            </header>
+            <div id="sections">
+                <section>
+                    <h2>G.R.A</h2>
+                    <button id="1">Przejdź</button>
+                </section>
+                <section>
+                    <h2>Portfolio</h2>
+                    <button id="2">Przejdź</button>
+                </section>
+                <section>
+                    <h2>Czat</h2>
+                    <button id="3">Przejdź</button>
+                </section>
+                <section>
+                    <h2>NLGtools</h2>
+                    <button id="4">Przejdź</button>
+                </section>
+                <section>
+                    <h2>Trójkąt</h2>
+                    <button id="5">Przejdź</button>
+                </section>
+            </div>
+        </div>
+        <script src="main.js"></script>
     </body>
 </html>
