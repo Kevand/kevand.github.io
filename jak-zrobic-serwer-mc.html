@@ -1,165 +1,301 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <title>Kevand | Poradnik Serwer MC</title>
+  <head>
+    <title>Kevand | Poradnik Serwer MC</title>
 
-        <meta charset="utf-8">
-        <meta name="author" content="kevand">
-        <meta name="description" content="Kevand's landing page">
-        <meta name="keyword" content="webdev, programming, music, kevand, games">
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap');
-            body{
-                background: rgb(10,10,10);
-                color: white;
-                font-family: 'Rubik', sans-serif;
-                font-size: 20px;
-            }
+    <meta charset="utf-8" />
+    <meta name="author" content="kevand" />
+    <meta name="description" content="Kevand's landing page" />
+    <meta name="keyword" content="webdev, programming, music, kevand, games" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap");
+      body {
+        background: rgb(10, 10, 10);
+        color: white;
+        font-family: "Rubik", sans-serif;
+        font-size: 20px;
+      }
 
-            #container{
-                width: 70vw;
-                min-height: 100vh;
-                margin-left: auto;
-                margin-right: auto;
-            } 
+      #container {
+        width: 70vw;
+        min-height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-            header{
-                width: 100%;
-                text-align: center;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                font-size: 50px;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
+      header {
+        width: 100%;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 50px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
 
-            a:link, a:visited{
-                text-decoration: none;
-                color: royalblue;
-                transition: 0.3s;
-            }
+      a:link,
+      a:visited {
+        text-decoration: none;
+        color: royalblue;
+        transition: 0.3s;
+      }
 
-            a:hover{
-                color: blue;
-            }
+      a:hover {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        Jak zrobić serwer Minecraft - Poradnik dla lajków.
+      </header>
+      <article>
+        W więc, są 3 różne sposoby posiadania serwera Minecraft na którym możesz
+        pograć z kolegami.
+        <ul>
+          <a href="#wynajem"
+            ><li>
+              Wynajmujesz serwer na stronie hostingowej (np. CraftServer,
+              Enderchest, TitanAxe)
+            </li></a
+          >
+          <a href="#wlasnypc"><li>Tworzysz serwer na swoim komputerze</li></a>
+          <a href="#lan"><li>Tworzysz serwer w sieci LAN</li></a>
+        </ul>
+        Po koleji pokaże wam każdy z tych sposobów. Do każdego możecie sobie
+        przyjemnie przewinąć :) <br />
+        <section>
+          <a name="wynajem"><h2>Wynajęcie serwera</h2></a>
+          Pójde prosto z mostu, bo nie chce mi się rozpisywać. <br />
+          Na początku musisz sobie znaleźć hosting (strona na której bedzie stał
+          twój serwer). W swoim nędznym życiu używałem już pare takich, ale na
+          razie moge polecić hosting o nazwie TitanAxe.com Działa dobrze,
+          support szybki więc jest git. Tam Pierwsze co zrobisz po założeniu
+          konta musisz je doładować, bo jednak trzeba za coś opłacać ten serwer,
+          jest kilka opcji : przelew, paypal, sms, ale z tym to już sobie chyba
+          każdy poradzi. Potem musimy stworzyć nasz serwer. W panelu zarządania
+          klikamy Dodaj Serwer. Tam klikamy opcje Minecraft, a następnie
+          wybieramy typ serwera. Tutaj już troszke z górki. Spróbuje omówić
+          każdy z nich.
+          <ul>
+            <li>
+              BungeeCord, HexaCord - silniki do tworzenia kilku serwerów w
+              jednym, raczej dla dużych przedsiębwzieć
+            </li>
+            <li>
+              CraftBukkit, Spigot, PaperSpigot, Travertine, Waterfall - wszystko
+              PRAWIE to samo, chodzi tutaj o możliwość używania tzw. pluginów
+              (dodatków do serwera w stylu komend /home czy innych)
+            </li>
+            <li>Forge - silnik do stworzenia serwera na modach</li>
+            <li>
+              Oryginalny - nasz normalny, oryginalny poczciwy minecraft, bez
+              żadnych dodatków
+            </li>
+          </ul>
 
-        </style>
-    </head>
-    <body>
-        <div id='container'>
-            <header>
-                Jak zrobić serwer Minecraft - Poradnik dla lajków.
-            </header>
-            <article>
-                W więc, są 3 różne sposoby posiadania serwera Minecraft na którym możesz pograć z kolegami.
-                    <ul>
-                        <a href='#wynajem'><li>Wynajmujesz serwer na stronie hostingowej (np. CraftServer, Enderchest, TitanAxe)</li></a>
-                        <a href='#wlasnypc'><li>Tworzysz serwer na swoim komputerze</li></a>
-                        <a href='#lan'><li>Tworzysz serwer w sieci LAN</li></a>
-                    </ul>
-                Po koleji pokaże wam każdy z tych sposobów. Do każdego możecie sobie przyjemnie przewinąć :) <br>
-                <section>
-                    <a name='wynajem'><h2>Wynajęcie serwera</h2></a>
-                    Pójde prosto z mostu, bo nie chce mi się rozpisywać. <br>
-                    Na początku musisz sobie znaleźć hosting (strona na której bedzie stał twój serwer).
-                    W swoim nędznym życiu używałem już pare takich, ale na razie moge polecić hosting o nazwie TitanAxe.com
-                    Działa dobrze, support szybki więc jest git.
-                    Tam Pierwsze co zrobisz po założeniu konta musisz je doładować, bo jednak trzeba za coś opłacać ten serwer, jest kilka opcji
-                    : przelew, paypal, sms, ale z tym to już sobie chyba każdy poradzi.
-                    Potem musimy stworzyć nasz serwer. W panelu zarządania klikamy Dodaj Serwer. Tam klikamy opcje Minecraft, a następnie wybieramy typ serwera.
-                    Tutaj już troszke z górki. Spróbuje omówić każdy z nich.
-                        <ul>
-                            <li>BungeeCord, HexaCord - silniki do tworzenia kilku serwerów w jednym, raczej dla dużych przedsiębwzieć</li>
-                            <li>CraftBukkit, Spigot, PaperSpigot, Travertine, Waterfall - wszystko PRAWIE to samo, chodzi tutaj o możliwość używania tzw. pluginów (dodatków do serwera w stylu komend /home czy innych)</li>
-                            <li>Forge - silnik do stworzenia serwera na modach</li>
-                            <li>Oryginalny - nasz normalny, oryginalny poczciwy minecraft, bez żadnych dodatków</li>
-                        </ul>
-                        
-                    Po prawej stronie mamy też gotowe paczki serwerowe, ale ich tu nie bede opisywał :)
+          Po prawej stronie mamy też gotowe paczki serwerowe, ale ich tu nie
+          bede opisywał :) W tym tutorialu pokaże jak zrobić czysty serwer
+          Minecraft. (kiedyś może dodam inne) Po kliknięciu oryginalny wybieramy
+          wersje naszego serwera. WAZNE - na jakiej wersji bedzie serwer, na
+          takiej minecraft bedziecie musieli grac by dołączyć :) Po wybraniu
+          wersji wybieramy lokalizacje (of kors poland the best, ale wiadomo,
+          ceny z tym są większe). oraz ile ramu. Ilość ramu jaką zależy wybrać
+          zależy od wielu czynników takich jak np. ilość graczy na serwerze,
+          rendering, ilość pluginów jak i modów (od razu mówie, zdaje sobie
+          sprawe że to zależy również od procesora, ale jak to support
+          powiedział "parametry procesora idą w parze z ramem :)") Z góry mówie
+          że nie będe tu opisywał jakie parametry serwera są potrzebne do
+          jakiego, o to należy spytać support bądź bardziej zaawansowanyc
+          techników (w każdej chwili możecie zmienić ilość ramu przypisanego do
+          serwera) Po tym wszystkim musimy tylko zatwierdzić regulaminy i
+          potwierdzamy zakup. Po tym po lewej stronie w zakładce serwery
+          powinien pokazać się nasz serwer. Teraz omówie po koleji wszystkie
+          zakładki i inne.
 
-                    W tym tutorialu pokaże jak zrobić czysty serwer Minecraft. (kiedyś może dodam inne)
+          <ul>
+            <li>
+              Zarządzanie - Tutaj możemy uruchomić serwer, zobaczyć
+              wykorzystywane zasoby, uzyskać informacje o parametrach serwera,
+              stronie, bazie danych itp. dla nas najważniejsza będzie opcja
+              uruchomienia serwera oraz jego adres ip, dzięki któremu bedziemy
+              mogli się do niego połączyć. (to jest ten pierwszy w polu
+              parametry serwera, w linjice adresy :)).
+            </li>
+            <li>
+              Konfiguracja - tutaj opisze każdą opcje po koleji.
+              <ul>
+                <li>
+                  Message of the Day (motd) - To co wyświetla sie pod nazwą
+                  serwera w Minecraft
+                </li>
+                <li>Liczba graczy - wiadomo</li>
+                <li>
+                  Dystans - jest to odległość z jaką będzie generował się świat
+                  w odległość od gracza podany w chunkach czyli 16x16 bloków
+                  (chyba dobrze to powiedziałem). Dla niskiego ramu, niski
+                  dystans
+                </li>
+                <li>
+                  Paczka zasobów - tzw. texture pack lub resource pack czyli
+                  paczka jaką ma proponować serwer przy wejsciu na niego
+                </li>
+                <li>
+                  SHA1 - tzw. specjalny klucz naszego texture pack'a (nie bede
+                  tu opisywał po co to)
+                </li>
+                <li>
+                  Tryb premium - jeżeli macie kupionego minecraft'a - zaznacz,
+                  jeżeli nie - odznacz
+                </li>
+                <li>Serwer publiczny - wiadomo</li>
+                <li>
+                  Biała lista - inaczej lista osób które mają zezwolenie na
+                  wejście na serwer -> nie potrzebne jeżeli nie udostępniacie ip
+                  serwera publicznie.
+                </li>
+                <li>
+                  Poziom uprawnien OPa - Jaką moc ma tzw. Admin, lepiej nie
+                  tykać jeżeli nie bedzie to zaawansowany serwer
+                </li>
+                <li>Poziom trudności - wiadomo</li>
+                <li>Tryb gry - wiadomo</li>
+                <li>Wymuś tryb gry - wiadomo</li>
+                <li>
+                  Włącz command block - pozwala na korzystanie z bloków poleceń
+                </li>
+                <li>PvP - można się bić z innymi graczami</li>
+                <li>
+                  Tryb hardcore - raz umrzesz, i już nie możesz grać na serwerze
+                </li>
+                <li>
+                  Włącz latanie - pozwala na latanie jeżeli nie jest się na
+                  trybie Kreatywnym -> Pozwala w jakimś stopniu zlikwidować
+                  cheaterów (chociaż często sie buguje jeżeli na serwerze są
+                  lagi)
+                </li>
+                <li>
+                  Włącz nether - można wyłączyć możliwość przejścia do netheru
+                </li>
+                <li>
+                  Ogłaszaj osiągnięcia graczy - wyświetla osiągnięcia na chatcie
+                </li>
+                <li>Zdalny dostęp do serwera - nie omawiamy :/</li>
+                <li>
+                  Nazwa mapy - proste, jeżeli chcemy pograć z kumplem w jakąś
+                  mapke parkour z neta, musimy tu wpisać nazwe folderu z nią,
+                  który wcześniej wrzuciliśmy do naszego serwera (potem opisze
+                  jak)
+                </li>
+                <li>
+                  Seed - unikalny kod naszego świata, dzięki któremu wygeneruje
+                  sie nasz świat (można zostawić puste, wtedy jest losowy)
+                </li>
+                <li>
+                  Opcje generatora - dodatkowe opcje takie jak czy mają się
+                  pojawiać wioski, twierdza czy inne (po wiecej informacji jak
+                  sie tym posługiwać -> google)
+                </li>
+                <li>Rozmiar świata - rozmiar świata w blokach</li>
+                <li>
+                  Ochrona spawnu - tyle bloków od orginalnego spawnu nie mogą
+                  budować ani niszczyć osoby bez OPa (nie bedące adminem)
+                </li>
+                <li>Wysokośc budowania - wiadomo (max. 265)</li>
+                <li>Typ mapy - wiadomo</li>
+                Reszta opcji raczej wiadoma (NIE ZAPOMINAĆ ZAPISAĆ ZMIAN
+                (ZIELONY PRZYCISK NA GÓRZE))
+              </ul>
+            </li>
+            <li>
+              Administracja - tutaj wpisujesz nick gracza, klikasz enter i
+              możesz mu zrobić różne rzeczy :)
+            </li>
+            <li>
+              Manager plików - tutaj można edytować pliki serwera. Jeżeli chcemy
+              dodać własny świat - TO WŁAŚNIE TU, ale niestety można to zrobić
+              tylko przez klient FTP (np. FileZilla) (Potem opisze co i jak z
+              tym)
+            </li>
+            <li>
+              Konsola & logi - Tutaj mamy całą konsole serwera, wszystkie
+              informacje na bierząco, chat, oraz możliwośc wpisywania komend
+            </li>
+            Reszta opcji serwera jest już raczej zbędna (dla nas :)).
+          </ul>
 
-                    Po kliknięciu oryginalny wybieramy wersje naszego serwera. WAZNE - na jakiej wersji bedzie serwer, na takiej minecraft bedziecie musieli grac by dołączyć :)
-                    Po wybraniu wersji wybieramy lokalizacje (of kors poland the best, ale wiadomo, ceny z tym są większe). oraz ile ramu. Ilość ramu jaką zależy wybrać zależy od wielu czynników takich jak np.
-                    ilość graczy na serwerze, rendering, ilość pluginów jak i modów (od razu mówie, zdaje sobie sprawe że to zależy również od procesora, ale jak to support powiedział "parametry procesora idą w parze z ramem :)")
-                    Z góry mówie że nie będe tu opisywał jakie parametry serwera są potrzebne do jakiego, o to należy spytać support bądź bardziej zaawansowanyc techników (w każdej chwili możecie zmienić ilość ramu przypisanego do serwera)
-                    Po tym wszystkim musimy tylko zatwierdzić regulaminy i potwierdzamy zakup. Po tym po lewej stronie w zakładce serwery powinien pokazać się nasz serwer. Teraz omówie po koleji wszystkie zakładki i inne.
+          No i to w sumie wszystko jeżeli chodzi o wynajęty serwer. Wystarczy
+          włączyć, skopiować IP i wbijać :D.
+        </section>
+        <section>
+          <a name="wlasnypc"><h2>Na własnym komputerze</h2></a>
 
-                    <ul>
-                        <li>
-                            Zarządzanie - Tutaj możemy uruchomić serwer, zobaczyć wykorzystywane zasoby, uzyskać informacje o parametrach serwera, stronie, bazie danych itp.
-                            dla nas najważniejsza będzie opcja uruchomienia serwera oraz jego adres ip, dzięki któremu bedziemy mogli się do niego połączyć. (to jest ten pierwszy w polu parametry serwera, w linjice adresy :)).
-                        </li>
-                        <li>
-                            Konfiguracja - tutaj opisze każdą opcje po koleji.
-                            <ul>
-                                <li>Message of the Day (motd) - To co wyświetla sie pod nazwą serwera w Minecraft</li>
-                                <li>Liczba graczy - wiadomo</li>
-                                <li>Dystans - jest to odległość z jaką będzie generował się świat w odległość od gracza podany w chunkach czyli 16x16 bloków (chyba dobrze to powiedziałem). Dla niskiego ramu, niski dystans</li>
-                                <li>Paczka zasobów - tzw. texture pack lub resource pack czyli paczka jaką ma proponować serwer przy wejsciu na niego</li>
-                                <li>SHA1 - tzw. specjalny klucz naszego texture pack'a (nie bede tu opisywał po co to)</li>
-                                <li>Tryb premium - jeżeli macie kupionego minecraft'a - zaznacz, jeżeli nie - odznacz</li>
-                                <li>Serwer publiczny - wiadomo</li>
-                                <li>Biała lista - inaczej lista osób które mają zezwolenie na wejście na serwer -> nie potrzebne jeżeli nie udostępniacie ip serwera publicznie.</li>
-                                <li>Poziom uprawnien OPa - Jaką moc ma tzw. Admin, lepiej nie tykać jeżeli nie bedzie to zaawansowany serwer</li>
-                                <li>Poziom trudności - wiadomo</li>
-                                <li>Tryb gry - wiadomo</li>
-                                <li>Wymuś tryb gry - wiadomo</li>
-                                <li>Włącz command block - pozwala na korzystanie z bloków poleceń</li>
-                                <li>PvP - można się bić z innymi graczami</li>
-                                <li>Tryb hardcore - raz umrzesz, i już nie możesz grać na serwerze</li>
-                                <li>Włącz latanie - pozwala na latanie jeżeli nie jest się na trybie Kreatywnym -> Pozwala w jakimś stopniu zlikwidować cheaterów (chociaż często sie buguje jeżeli na serwerze są lagi)</li>
-                                <li>Włącz nether - można wyłączyć możliwość przejścia do netheru</li>
-                                <li>Ogłaszaj osiągnięcia graczy - wyświetla osiągnięcia na chatcie</li>
-                                <li>Zdalny dostęp do serwera - nie omawiamy :/</li>
-                                <li>Nazwa mapy - proste, jeżeli chcemy pograć z kumplem w jakąś mapke parkour z neta, musimy tu wpisać nazwe folderu z nią, który wcześniej wrzuciliśmy do naszego serwera (potem opisze jak)</li>
-                                <li>Seed - unikalny kod naszego świata, dzięki któremu wygeneruje sie nasz świat (można zostawić puste, wtedy jest losowy)</li>
-                                <li>Opcje generatora - dodatkowe opcje takie jak czy mają się pojawiać wioski, twierdza czy inne (po wiecej informacji jak sie tym posługiwać -> google)</li>
-                                <li>Rozmiar świata - rozmiar świata w blokach</li>
-                                <li>Ochrona spawnu - tyle bloków od orginalnego spawnu nie mogą budować ani niszczyć osoby bez OPa (nie bedące adminem)</li>
-                                <li>Wysokośc budowania - wiadomo (max. 265)</li>
-                                <li>Typ mapy - wiadomo</li>
-                                Reszta opcji raczej wiadoma (NIE ZAPOMINAĆ ZAPISAĆ ZMIAN (ZIELONY PRZYCISK NA GÓRZE))
-                            </ul>
-                        </li>
-                        <li>
-                            Administracja - tutaj wpisujesz nick gracza, klikasz enter i możesz mu zrobić różne rzeczy :)
-                        </li>
-                        <li>
-                            Manager plików - tutaj można edytować pliki serwera. Jeżeli chcemy dodać własny świat - TO WŁAŚNIE TU, ale niestety można to zrobić tylko przez klient FTP (np. FileZilla) (Potem opisze co i jak z tym)
-                        </li>
-                        <li>
-                            Konsola & logi - Tutaj mamy całą konsole serwera, wszystkie informacje na bierząco, chat, oraz możliwośc wpisywania komend
-                        </li>
-                        Reszta opcji serwera jest już raczej zbędna (dla nas :)).
-                    </ul>
+          Tutaj pokaże jak zrobić czysty serwer minecraft na własnym komputerze.
+          Pierwsze co potrzebujemy to konto na stronie
+          <a href="http://ngrok.com">ngrok.com</a> Po założeniu konta,
+          powinniśmy wylądować w naszy dashbordzie, lub po ludzku profilu. Stąd
+          klikamy download for Windows i zapisujemy gdzie nam wygodnie.
+          Następnie wypakowujemy plik (Jeżeli masz WinRara bądz podobne to
+          klikasz Wypakuj Tutaj lub Extract Here, jeżeli nie klikasz prawy i
+          wyodrębnij wszytkie) Tam mamy plik ngrok lub ngrok.exe, ale to nie
+          ważne. Klikamy shift+prawy w folderze gdzie znajduje się ten plik i
+          klikamy "Otwórz tutaj okno programu PowerShell" lub coś podobnego.
+          Wyskoczy nam konsola. Wróć na strone ngrok.com i tam masz drugi punkt
+          pod tytułem Connect your account. Kopiujesz całą linike z ./ngrok
+          authtoken jakiśtamkod i wklejasz do tej konsoli aka PowerShella i
+          klikasz Enter. Jeżeli wszystkio dobrze poszło możesz już wyłączyć tą
+          konsole. Teraz już tylko pobierasz
+          <a href="files/Start.bat" download="Start.bat">ten plik</a> i
+          zapisujesz go w folderze gdzie znajduje się plik ngrok. Jest to skrypt
+          który automatycznie włączy ngrok z odpowiednią konfiguracją. Po
+          odpaleniu Start lub Start.bat(jeżeli masz włączone rozserzenia plików)
+          pokaże ci sie takie okno<br />
+          <br />
+          <img src="res/ngrok.png" /> <br />
+          <br />W miejsciu gdzię pisze Forwarding masz taki ala link. To bedzię
+          IP twojego serwera (bez tego tcp://, czyli jeżeli chcesz komuś wysłać
+          to ip wysyłasz przykładowo 0.tcp.eu.ngrok.io:11934) Za każdym razem
+          teraz jak chcesz odpalić serwer MC, włączasz plik Start a następnie
+          kopiujesz to IP,
+          <b>gdyż za każdym odpaleniem będzie ono inne!!.</b>
 
-                    No i to w sumie wszystko jeżeli chodzi o wynajęty serwer. Wystarczy włączyć, skopiować IP i wbijać :D.
-
-                </section>
-                <section>
-                    <a name='wlasnypc'><h2>Na własnym komputerze</h2></a>
-
-                    Tutaj już bedzie troche trudniej. W tym poradniku pokaże jak zrobić czysty, oryginalny serwer Minecraft (Kiedyś będą dotyczące serwera na modach i na pluginach).
-                    Po pierwsze, potrzebujemy określić się, czy nasz router ma swoje własne, statyczne IP. Nie ma? Haha, pewnie po prostu tego nie wiesz, dlatego tutaj pokaże przystępną opcje bez brnięcia w szeczegóły technik sieciowych.
-                    Pewnie w wielu innych poradnikach ludzie mówili o magicznym Hamachi, dzięki któremu wasz serwer zadziała. Otóż nie, przynajmniej nie w moim przypadku (nie wiem czy tylko ja tak mam, ale ja i moji znajomi często mieliśmy z nim problemy).
-                    Tutaj posłuże się programem o nazwie Radmin VPN (moim zdaniem lepszy odpowiednik wcześniej wspomnianego Hamachi) do pobrania <a href='https://www.radmin-vpn.com/pl/'>tutaj</a>.
-                    Po krótkiej instalacji (mógł ci wyskoczyć komunikat coś tam o sieci, nie przejmuj się, kliknij obojętnie co albo zignoruj informacje.) Pokaże nam się okno, gdzie klikamy na zakładke "Sieć" a następnie "Utwórz nową sięc".
-                    Tam podajemy parametry czyli nazwe (najlepiej prostą, bez polskich znaków) oraz hasło. Po utworzeniu sieci nasi znajomi mogą do niej dołączyć klikając w zakładce "Sieć" opcje "Dołącz do istniejącej sieci" gdzie muszą wpisać wcześniej podane przez ciebie dane.
-                    Po tym wszystkim ważne jest, że gdy chcecie pograć razem na serwerze, musicie miec odpalony ten program!, jeżeli nie wiesz czy jest on włączony, możesz to sprawdzić szukająć w prawym dolnym rogu w pasku ikonki niebieskiej tarczy :).
-                    Nastepnym krokiem jest pobranie naszego pliku serwerowego (żeby nie było xD, tylko jedna osoba go pobiera (twórca serwera)). Do tej czynności polecam stone <a href='https://mcversions.net/'>mcversions.net</a>, na której szukamy wersji na której chcemy pograć,
-                    klikamy Download a następnie klikamy Download Server Jar.
-                    Stwórzmy teraz gdzies folder na nasz serwer. Można to zrobić na pulpicie ;).
-                    Przerzućmy plik do naszego folderu, po czym go uruchommy. Nic sie nie odpaliło? To dobrze, powinny sie pokazać 2 dodatkowe pliki i folder o nazwie logs. Jeden z plików to eula.txt. W środku mamy link do regulaminu Mojang na temat serwerów minecraft, oraz linjike "eula=false". zmieniamy false na true i zapisujemy plik. Teraz przejdźmy do pliku server.properties (u was może być po prostu server, i z ikonką białego dokumentu).
-                    Klikamy na ten plik prawy i otwórz za pomocą (bądź po prostu go uruchamiamy -> powinien być ten sam efekt) i wybieramy notatnik.
-                    W środku mamy naszą magiczną konfiguracje serwera którą już wcześniej opisałem (w częsci dotyczącej tworzenia serwera na hostingu). Prawie niczym innym sie to nie różni prócz troche większą ilością opcji, angielskimi nazwami i straszniejszą składnią :).
-                    UWAGA - pole server-ip, jak
-
-                </section>
-            </article>
-            <footer>
-
-            </footer>
-        </div>
-    </body>
+          <br />
+          <br />
+          Stąd już prosta droga do stworzenia serwera. wchodzisz na strone
+          <a href="http://mcversions.net">mcversions.net</a> i szukasz
+          odpowiedniej dla ciebie wersji. Klikasz przy niej Download a następnie
+          Download Server Jar. Zapisz ten plik w stworzonym przez siebie
+          folderze specjalnie pod ten serwer. Odpalasz plik, po chwili jak
+          wyszkoczy coś o EULA wyłączasz go, w folderze szukasz pliku eula i
+          zmieniasz w nim eula=false na eula=true. Odpalasz plik jeszcze raz.
+          Czekasz aż serwer ci się załaduje (Będzie pisało coś w stylu "Done,
+          for help..."), po załadowaniu wyłączasz serwer i szukasz pliku
+          server.properties (lub po prostu server) klikasz na nim prawy i otwórz
+          za pomocą notatnik. w nim najważniejsze opcje to.
+          <ul>
+            <li>
+              difficulty - tutaj w zależności od wersji wpisujesz albo tekstowo
+              albo liczbowo 0-peaceful, 1-normal, 2-hard
+            </li>
+            <li>
+              gamemode - tryb gry, tak samo liczbowo albo tekstowo 0-survival,
+              1-creative, 2-adventure
+            </li>
+            <li>max-players - maksymalna liczba graczy</li>
+            <li>
+              motd - opis jaki się pojawia pod serwerem kiedy dodasz go do listy
+            </li>
+            <li>
+              online-mode - jeżeli grasz na non-premium tj. nie masz kupionej
+              gry, wpisz false, jeżeli wszyscy gracze mają kupioną, true
+            </li>
+          </ul>
+          Po zmianie tych opcji zapisujesz plik, i możesz odpalić serwer. Teraz
+          twoji znajomi mogą na niego wejść wpisująć IP z ngrok'a :)
+        </section>
+      </article>
+      <footer></footer>
+    </div>
+  </body>
 </html>
