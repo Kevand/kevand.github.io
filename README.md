@@ -1,2 +1,2 @@
 # kevand.github.io
-My website with a small game i working on
+Hi everyone :) this is my website i'm using to show some things that i'm making to a world. There is a big propability that u are here because of mistake, so i hope u have a good day <3

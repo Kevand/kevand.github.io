@@ -1,4 +1,4 @@
-var colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00'];
+var colors = ['#8cb04e', '#5c452d', '#e1dfb6', '#7a9244', '#c5ee7d'];
 var sections = document.querySelectorAll('section');
 
 function RandomColors(){
@@ -26,14 +26,21 @@ button[2].addEventListener('click', () => {
 });
 
 button[3].addEventListener('click', () => {
-    window.location = 'http://kevandzior.atthost24.pl';
+    alert("Under maintance, sorry :/");
+    //window.location = 'http://kevandzior.atthost24.pl';
 });
 
 button[4].addEventListener('click', () => {
-    window.location = 'http://nlgtools.kevandzior.atthost24.pl';
+    alert("Under maintance, sorry :/");
+    //window.location = 'http://nlgtools.kevandzior.atthost24.pl';
 });
 
 button[5].addEventListener('click', () => {
-    window.location = 'http://trojkat.kevandzior.atthost24.pl';
+    alert("Under maintance, sorry :/");
+    //window.location = 'http://trojkat.kevandzior.atthost24.pl';
+});
+
+button[6].addEventListener('click', () => {
+    window.location = 'jak-zrobic-serwer-mc.html';
 });
 
