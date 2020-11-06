@@ -45,6 +45,6 @@ button[6].addEventListener("click", () => {
   window.location = "jak-zrobic-serwer-mc.html";
 });
 
-button[6].addEventListener("click", () => {
+button[7].addEventListener("click", () => {
   window.location = "http://mod.nlgteam.atthost24.pl";
 });
