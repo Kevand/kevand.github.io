@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700&display=swap');
 
+:root{
+    --background: #16171D;
+    --foreground: #F6F6F6;
+    --gray: #5c6370;
+    --yellow: #FFD945;
+    --red: #FF3F4F;
+    --blue: #00a0e4;
+    --green: #81F900;
+    --orange: #FF9700;
+    --cyan: #6AEBF7;
+    --purple: #c678dd;
+}
+
 *{
     font-family: "JetBrains Mono", monospace;
 }
@@ -22,9 +35,9 @@ body{
 }
 
 /* DARK GRAY */
-.text-dark-gray { color: #5c6370; }
-.border-dark-gray { border-color: #5c6370; }
-.bg-dark-gray { background: #5c6370; }
+.text-gray { color: #5c6370; }
+.border-gray { border-color: #5c6370; }
+.bg-gray { background: #5c6370; }
 
 /* yellow */
 .text-yellow { color: #FFD945; }
